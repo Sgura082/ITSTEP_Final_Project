@@ -1,0 +1,26 @@
+photo = PhotoImage( file = "")
+{% extends 'base.html' %}
+
+{% block title %} <title>Welcome Page</title>{%endblock%}
+{% block content %}
+<h1>MUHEHEHEHEHHEHEHEH...OH</h1>
+<div style="text-align: center;">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Georgia.svg/1920px-Georgia.svg.png" id="map-image" style="width: 1920px; max-width: 100%; height: auto;" alt="" usemap="#map" />
+    <map name="map">
+        <area shape="poly" coords="609, 234, 559, 254, 585, 388, 472, 474, 508, 582, 621, 536, 665, 571, 740, 419, 764, 414, 736, 373, 696, 322, 709, 278, 876, 290, 903, 262, 822, 191, 637, 179, 639, 180, 639, 180, 630, 193, 630, 194" alt="Samegrelo" href="navbar.html" title="SAMEGRELO!!!" id="IDSamegrelo"/>
+        <area shape="poly" coords="85, 49, 53, 111, 121, 139, 140, 200, 339, 258, 369, 331, 449, 348, 473, 462, 577, 384, 550, 244, 607, 228, 628, 186, 489, 169, 234, 50, 206, 67, 123, 38" alt="Abkhazeti" href="navbar.html" title="ABKHAZETI!!!" id="IDAbkhazeti"/>
+        <area shape="poly" coords="1117, 710, 1105, 726, 1069, 732, 1058, 784, 1111, 788, 1136, 919, 1359, 906, 1352, 884, 1392, 890, 1487, 819, 1441, 770, 1454, 726, 1410, 682, 1346, 693, 1325, 729, 1307, 740, 1280, 718" alt="KVEMO KARTLI" href="navbar.html" title="KVEMO KARTLI!!!" id="IDKVEMO_KARTLI"/>
+        <area shape="poly" coords="1485, 414, 1605, 444, 1598, 512, 1561, 529, 1784, 650, 1726, 700, 1726, 752, 1773, 807, 1866, 863, 1870, 899, 1852, 951, 1761, 948, 1714, 915, 1590, 877, 1607, 855, 1495, 814, 1453, 770, 1461, 722, 1422, 685, 1441, 526, 1478, 489" alt="Kaxeti" href="navbar.html" title="KAXETI!!!" id="IDKaxeti"/>
+        <area shape="poly" coords="1208, 367, 1207, 396, 1249, 523, 1218, 558, 1222, 592, 1263, 592, 1298, 659, 1278, 704, 1317, 727, 1343, 687, 1419, 672, 1432, 523, 1467, 488, 1478, 407, 1440, 355, 1365, 346, 1354, 390, 1323, 350" alt="MTSKHETA-MTIANETI" href="navbar.html" title="MTSKHETA-MTIANETI!!!" id="IDMTSKHETA-MTIANETI"/>
+        <area shape="poly" coords="746, 712, 772, 766, 824, 775, 822, 813, 920, 882, 942, 917, 1128, 927, 1102, 794, 1049, 791, 1066, 723, 1102, 717, 990, 651, 906, 688, 780, 688" alt="SAMTSKHE-JAVAKHETI" href="navbar.html" title="SAMTSKHE-JAVAKHETI!!!" id="IDSAMTSKHE-JAVAKHETI"/>
+        <area shape="poly" coords="1196, 389, 1059, 456, 1081, 493, 1052, 509, 991, 645, 1102, 705, 1262, 713, 1289, 659, 1255, 602, 1210, 604, 1212, 547, 1236, 522" alt="Shida kartli" href="navbar.html" title="SHIDA KARTLI!!!" id="IDSHIDA_KARTLI"/>
+        <area shape="poly" coords="536, 667, 476, 793, 549, 819, 587, 793, 730, 823, 757, 776, 733, 729, 734, 693, 615, 694, 572, 659" alt="ADJARA" href="navbar.html" title="ADJARA!!!" id="IDADJARA"/>
+        <area shape="poly" coords="523, 586, 590, 556, 678, 599, 777, 652, 764, 686, 711, 686, 615, 685, 576, 654, 532, 655" alt="Guria" href="navbar.html" title="GURIA!!!" id="IDGuria"/>
+        <area shape="poly" coords="720, 284, 704, 317, 789, 437, 853, 439, 853, 476, 897, 481, 931, 456, 1023, 454, 1103, 430, 1125, 418, 1058, 390, 1083, 349, 1004, 300, 906, 273, 879, 302" alt="RACHA_LECHXUMI" href="navbar.html" title="RACHA-LECHXUMI, KVEMO SVANETI!!!" id="IDRacha_Lechxumi"/>
+        <area shape="poly" coords="768, 422, 741, 433, 675, 574, 784, 651, 783, 677, 916, 673, 981, 644, 1047, 500, 1071, 489, 1025, 464, 929, 468, 897, 493, 844, 480, 847, 449, 785, 448" alt="Imereti" href="navbar.html" title="IMERETI!!!" id="IDImereti"/>
+    </map>
+</div>
+{% for post in posts %}
+
+{% endfor %}
+{% endblock %}
