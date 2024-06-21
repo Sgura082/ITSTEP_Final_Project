@@ -1,13 +1,30 @@
-photo = PhotoImage( file = "")
+1
 {% extends 'base.html' %}
-
 {% block title %} <title>Welcome Page</title>{%endblock%}
 {% block content %}
-<h1>MUHEHEHEHEHHEHEHEH...OH</h1>
+<style>
+body {
+  background-image:
+  url('https://w0.peakpx.com/wallpaper/860/556/HD-wallpaper-adishi-village-summer-beautiful-nature-upper-svaneti-georgia-asia-georgian-nature-mountains.jpg'),
+  url(https://c4.wallpaperflare.com/wallpaper/766/970/409/cities-city-building-cityscape-wallpaper-preview.jpg),
+  url(https://c4.wallpaperflare.com/wallpaper/977/138/381/tbilisi-georgia-wallpaper-preview.jpg),
+  url(https://scontent.ftbs6-2.fna.fbcdn.net/v/t31.18172-8/28616317_1304594389642825_9025634682013255302_o.jpg?_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_ohc=M_OzmJZvdwMQ7kNvgGCCnw7&_nc_ht=scontent.ftbs6-2.fna&oh=00_AYBuCB_uOywgys2JJRNupr4ca455Ng572s3nuyDM2XnbFQ&oe=669D38FE),
+  url(https://images.unsplash.com/photo-1577701122197-c9607038bd90?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D),
+  url(https://scontent.ftbs6-2.fna.fbcdn.net/v/t1.6435-9/76953179_3140050239403620_7669142300076802048_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_ohc=O9ZiAj570skQ7kNvgG9TH3f&_nc_ht=scontent.ftbs6-2.fna&oh=00_AYAMfOMbLOTsdtpykVXygEnxqwDqb65sSR0bG57JNCmbJw&oe=669D4A94),
+  url(https://scontent.ftbs6-2.fna.fbcdn.net/v/t1.6435-9/68496753_1329339737241388_8300049317704499200_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_ohc=-Ksn7qnzZswQ7kNvgFjP8Hp&_nc_ht=scontent.ftbs6-2.fna&oh=00_AYCtrG7joz5lUI29sFNTsoNVy2fUS_aiBrvb2KvuclKL_g&oe=669D39E2),
+  url(https://mediaim.expedia.com/destination/1/86e3ee02a2379698ea0f459b727b1f1a.jpg);
+  background-repeat: no-repeat,no-repeat,no-repeat;
+  background-position: center top, left top, left bottom, left center,right top,right center,right bottom,center bottom;
+  background-attachment: fixed,fixed,fixed,fixed,fixed,fixed,fixed,fixed;
+  background-size: 50% 50%,30% 30%,30% 30%,50% 50%,30% 30%,50% 40%,30% 30%,50% 50%;
+}
+</style>
+<h1 style="text-align: center; font-size: 150; background-color:white;" >WELCOME TO GEORGIA </h1>
+<h2 style="text-align: center; font-size: 100; background-color:gold;">Choose region you wish to visit</h2>
 <div style="text-align: center;">
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Georgia.svg/1920px-Georgia.svg.png" id="map-image" style="width: 1920px; max-width: 100%; height: auto;" alt="" usemap="#map" />
     <map name="map">
-        <area shape="poly" coords="609, 234, 559, 254, 585, 388, 472, 474, 508, 582, 621, 536, 665, 571, 740, 419, 764, 414, 736, 373, 696, 322, 709, 278, 876, 290, 903, 262, 822, 191, 637, 179, 639, 180, 639, 180, 630, 193, 630, 194" alt="Samegrelo" href="navbar.html" title="SAMEGRELO!!!" id="IDSamegrelo"/>
+        <area shape="poly" coords="609, 234, 559, 254, 585, 388, 472, 474, 508, 582, 621, 536, 665, 571, 740, 419, 764, 414, 736, 373, 696, 322, 709, 278, 876, 290, 903, 262, 822, 191, 637, 179, 639, 180, 639, 180, 630, 193, 630, 194" alt="Samegrelo" href="about/" title="SAMEGRELO!!!" id="IDSamegrelo"/>
         <area shape="poly" coords="85, 49, 53, 111, 121, 139, 140, 200, 339, 258, 369, 331, 449, 348, 473, 462, 577, 384, 550, 244, 607, 228, 628, 186, 489, 169, 234, 50, 206, 67, 123, 38" alt="Abkhazeti" href="navbar.html" title="ABKHAZETI!!!" id="IDAbkhazeti"/>
         <area shape="poly" coords="1117, 710, 1105, 726, 1069, 732, 1058, 784, 1111, 788, 1136, 919, 1359, 906, 1352, 884, 1392, 890, 1487, 819, 1441, 770, 1454, 726, 1410, 682, 1346, 693, 1325, 729, 1307, 740, 1280, 718" alt="KVEMO KARTLI" href="navbar.html" title="KVEMO KARTLI!!!" id="IDKVEMO_KARTLI"/>
         <area shape="poly" coords="1485, 414, 1605, 444, 1598, 512, 1561, 529, 1784, 650, 1726, 700, 1726, 752, 1773, 807, 1866, 863, 1870, 899, 1852, 951, 1761, 948, 1714, 915, 1590, 877, 1607, 855, 1495, 814, 1453, 770, 1461, 722, 1422, 685, 1441, 526, 1478, 489" alt="Kaxeti" href="navbar.html" title="KAXETI!!!" id="IDKaxeti"/>
@@ -19,6 +36,7 @@ photo = PhotoImage( file = "")
         <area shape="poly" coords="720, 284, 704, 317, 789, 437, 853, 439, 853, 476, 897, 481, 931, 456, 1023, 454, 1103, 430, 1125, 418, 1058, 390, 1083, 349, 1004, 300, 906, 273, 879, 302" alt="RACHA_LECHXUMI" href="navbar.html" title="RACHA-LECHXUMI, KVEMO SVANETI!!!" id="IDRacha_Lechxumi"/>
         <area shape="poly" coords="768, 422, 741, 433, 675, 574, 784, 651, 783, 677, 916, 673, 981, 644, 1047, 500, 1071, 489, 1025, 464, 929, 468, 897, 493, 844, 480, 847, 449, 785, 448" alt="Imereti" href="navbar.html" title="IMERETI!!!" id="IDImereti"/>
     </map>
+
 </div>
 {% for post in posts %}
 

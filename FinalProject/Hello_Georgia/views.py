@@ -14,4 +14,6 @@ posts = [
 #https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Georgia.svg/1920px-Georgia.svg.png
 def home(request):
     return render(request, 'Home.html',{"posts": posts})
+def base(request):
+    return render(request, 'Base.html')
 
