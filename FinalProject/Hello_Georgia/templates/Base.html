@@ -1,13 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+<script>
+        function show(shown) {
 
+            var regions = document.getElementsByClassName('region');
+            for (var i = 0; i < regions.length; i++) {
+                regions[i].style.display = 'none';
+            }
+            document.getElementById(shown).style.display = 'block';
+        }
+        function getQueryParameter(name) {
+
+            let urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(name);
+        }
+
+        function showRegion() {
+
+            let region = getQueryParameter('region');
+
+
+            var regions = document.getElementsByClassName('region');
+            for (var i = 0; i < regions.length; i++) {
+                regions[i].style.display = 'none';
+            }
+
+            if (region) {
+                var element = document.getElementById(region);
+                if (element) {
+                    element.style.display = 'block';
+                }
+            }
+        }
+    window.onload = showRegion;
+</script>
 <head>
     <meta charset="UTF-8">
     <title>Hello Georgia</title>
 </head>
 <body>
 <font style="background-color: #e5a13e; font-size: 200px; font-family: 'Museo Sans'">
-    {% block title%}
+    {% block title %}
     {% endblock %}
     </font>
 <br>
