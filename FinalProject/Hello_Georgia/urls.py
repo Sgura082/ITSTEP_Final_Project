@@ -31,6 +31,6 @@ urlpatterns = [
     path('Shida_Kartli/', views.Shida_Kartli, name="Shida_Kartli"),
     path('Kvemo_Kartli/', views.Kvemo_Kartli, name="Kvemo_Kartli"),
     path('Imereti/', views.Imereti, name="Imereti"),
-
+    path('Racha_Lechkhumi/', views.Racha_Lechkhumi, name="Racha_Lechkhumi"),
 
 ]

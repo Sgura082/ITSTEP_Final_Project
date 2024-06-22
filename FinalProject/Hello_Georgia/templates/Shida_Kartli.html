@@ -3,7 +3,9 @@
 
 {% block title %} SHIDA KARTLI{% endblock %}
 {% block content %}
-
+    {% for obj in Descriptions %}
+       {{obj.SHIDA_KARTLI}}
+    {% endfor %}
 {% endblock %}
 
 

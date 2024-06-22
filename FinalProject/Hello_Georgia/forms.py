@@ -8,7 +8,7 @@ class VisitorForm(forms.ModelForm):
         fields = ['visitor_name','visitor_last_name','visitor_ID','visitor_mobiluri']
 
         widgets = {
-            'visitor_name': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Please enter your Name'}),
+            'visitor_name': forms.TextInput(attrs={'height':'200px' ,'class': 'form-control', 'placeholder': 'Please enter your Name'}),
             'visitor_last_name': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Please enter your Lastname'}),
             'visitor_ID': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Please enter your ID Number (11 char)'}),
             'visitor_mobiluri': forms.TextInput(attrs={'class': 'form-control', 'placeholder':

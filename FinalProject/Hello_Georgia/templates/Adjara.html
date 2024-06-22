@@ -3,7 +3,9 @@
 
 {% block title %} ADJARA{% endblock %}
 {% block content %}
-
+    {% for obj in Descriptions %}
+       {{obj.ADJARA}}
+    {% endfor %}
 {% endblock %}
 
 

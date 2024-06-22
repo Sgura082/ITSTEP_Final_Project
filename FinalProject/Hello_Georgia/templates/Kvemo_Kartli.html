@@ -3,7 +3,9 @@
 
 {% block title %} KVEMO KARTLI{% endblock %}
 {% block content %}
-
+    {% for obj in Descriptions %}
+       {{obj.KVEMO_KARTLI}}
+    {% endfor %}
 {% endblock %}
 
 

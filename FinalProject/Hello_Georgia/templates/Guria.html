@@ -3,7 +3,9 @@
 
 {% block title %} GURIA{% endblock %}
 {% block content %}
-
+    {% for obj in Descriptions %}
+       {{obj.GURIA}}
+    {% endfor %}
 {% endblock %}
 
 

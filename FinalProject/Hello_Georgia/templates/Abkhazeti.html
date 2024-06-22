@@ -3,7 +3,9 @@
 
 {% block title %} ABKHAZETI{% endblock %}
 {% block content %}
-
+    {% for obj in Descriptions %}
+       {{obj.ABKHAZETI}}
+    {% endfor %}
 {% endblock %}
 
 

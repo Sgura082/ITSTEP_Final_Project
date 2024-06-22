@@ -3,7 +3,9 @@
 
 {% block title %} MTSKHETA MTIANETI{% endblock %}
 {% block content %}
-
+    {% for obj in Descriptions %}
+       {{obj.MTSKHETA_MTIANETI}}
+    {% endfor %}
 {% endblock %}
 
 

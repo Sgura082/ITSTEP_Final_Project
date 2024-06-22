@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'Hello_Georgia.apps.HelloGeorgiaConfig',
+    'Hello_Georgia',
     'crispy_forms',
     'crispy_bootstrap5'
 

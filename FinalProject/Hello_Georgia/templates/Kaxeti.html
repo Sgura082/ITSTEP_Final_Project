@@ -3,7 +3,9 @@
 
 {% block title %} KAXETI{% endblock %}
 {% block content %}
-
+    {% for obj in Descriptions %}
+       {{obj.KAXETI}}
+    {% endfor %}
 {% endblock %}
 
 
