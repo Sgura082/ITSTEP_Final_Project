@@ -20,5 +20,13 @@ from . import views
 urlpatterns = [
     path('', views.home, name="Home"),
     path('about/', views.base, name="About"),
+    path('add_visitor/', views.add_visitor, name='add_visitor'),
+    path('Kaxeti/', views.kaxeti, name="Kaxeti"),
+    path('Samegrelo/', views.base, name="Samegrelo"),
+    path('Abkhazeti/', views.base, name="Abkhazeti"),
+    path('Guria/', views.base, name="Guria"),
+    path('Adjara/', views.base, name="Adjara"),
+    path('Mtskheta_mtianeti/', views.base, name="Mtskheta_mtianeti"),
+
 
 ]

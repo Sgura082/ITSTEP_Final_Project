@@ -27,8 +27,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-
-# Application definition
+CRISPY_TEMPLATE_PACK = 'bootstrap5'
+# Application definitionpi
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'Hello_Georgia.apps.HelloGeorgiaConfig',
+    'crispy_forms',
+    'crispy_bootstrap5'
 
 ]
 

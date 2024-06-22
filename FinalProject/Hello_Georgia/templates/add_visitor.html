@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title%} Add visit {% endblock%}
+
+{% load crispy_forms_tags %}
+
+{% block content%}
+
+    <h1>Signing up for a TOUR</h1>
+    <form method="post">
+
+        {{form|crispy}}
+        {% csrf_token %}
+
+        <button type="submit" class="btn brn-success">Sign Up</button>
+    </form>
+{% endblock %}
