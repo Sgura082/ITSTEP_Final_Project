@@ -3,9 +3,22 @@
 
 {% block title %} GURIA{% endblock %}
 {% block content %}
+        <div class="card">
+          <div class="card-header">
+            About
+          </div>
+          <div class="card-body">
+            <blockquote class="blockquote mb-0">
     {% for obj in Descriptions %}
-       {{obj.GURIA}}
+
+              <p>{{obj.GURIA}}</p>
+
+
     {% endfor %}
+                              <footer class="blockquote-footer">----<cite title="Source Title">ChatGPT</cite></footer>
+            </blockquote>
+          </div>
+        </div>
 {% endblock %}
 
 
