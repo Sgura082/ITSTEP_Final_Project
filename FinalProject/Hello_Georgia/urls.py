@@ -22,11 +22,15 @@ urlpatterns = [
     path('about/', views.base, name="About"),
     path('add_visitor/', views.add_visitor, name='add_visitor'),
     path('Kaxeti/', views.kaxeti, name="Kaxeti"),
-    path('Samegrelo/', views.base, name="Samegrelo"),
-    path('Abkhazeti/', views.base, name="Abkhazeti"),
-    path('Guria/', views.base, name="Guria"),
-    path('Adjara/', views.base, name="Adjara"),
-    path('Mtskheta_mtianeti/', views.base, name="Mtskheta_mtianeti"),
+    path('Samegrelo/', views.samegrelo, name="Samegrelo"),
+    path('Abkhazeti/', views.Abkhazeti, name="Abkhazeti"),
+    path('Guria/', views.Guria, name="Guria"),
+    path('Adjara/', views.Adjara, name="Adjara"),
+    path('Mtskheta_Mtianeti/', views.Mtskheta_Mtianeti, name="Mtskheta_mtianeti"),
+    path('Samtskhe_Javakheti/', views.Samtskhe_Javakheti, name="Samtskhe_Javakheti"),
+    path('Shida_Kartli/', views.Shida_Kartli, name="Shida_Kartli"),
+    path('Kvemo_Kartli/', views.Kvemo_Kartli, name="Kvemo_Kartli"),
+    path('Imereti/', views.Imereti, name="Imereti"),
 
 
 ]
