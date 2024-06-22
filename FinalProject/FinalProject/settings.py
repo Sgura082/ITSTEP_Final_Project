@@ -27,7 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-CRISPY_TEMPLATE_PACK = 'bootstrap5'
+
 # Application definitionpi
 
 INSTALLED_APPS = [
@@ -39,8 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'Hello_Georgia',
     'crispy_forms',
-    'crispy_bootstrap5'
-
+    "crispy_bootstrap4",
 ]
 
 MIDDLEWARE = [
@@ -129,3 +128,4 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+CRISPY_TEMPLATE_PACK = 'bootstrap4'

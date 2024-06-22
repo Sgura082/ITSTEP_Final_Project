@@ -8,9 +8,9 @@
 
     <form method="post">
 
-        {{form|crispy}}
+        {% crispy form %}
         {% csrf_token %}
 
-        <button  type="submit" class="btn brn-success" style="font-size:50px; height:200px; width:500px">Sign Up</button>
+
     </form>
 {% endblock %}

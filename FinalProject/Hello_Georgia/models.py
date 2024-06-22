@@ -12,13 +12,10 @@ class Guides(models.Model):
     def __str__(self):
         return (f"ID: {self.guide_ID} / Name: {self.guide_name} / Lastname: {self.guide_last_name} "
                 f"/ Mob: {self.guide_mobiluri}")
-    def __repr__(self):
-        return (f"ID: {self.guide_ID}")
 
 
-    def __str__(self):
-        return (f"ID: {self.visitor_ID} / Name: {self.visitor_name} / Lastname: {self.visitor_last_name} "
-                f"/ Mob: {self.visitor_mobiluri}")
+
+
 class Regions(models.Model):
     name = models.CharField(max_length=30)
     number_of_tours = models.IntegerField()
@@ -42,3 +39,6 @@ class Visitor(models.Model):
     date_of_visit = models.DateField
     chosen_tour = models.ManyToManyField(Tours)
     visitor_mobiluri = models.CharField(max_length=9)
+    def __str__(self):
+        return (f"ID: {self.visitor_ID} / Name: {self.visitor_name} / Lastname: {self.visitor_last_name} "
+                f"/ Mob: {self.visitor_mobiluri}")
