@@ -13,8 +13,8 @@ class Guide(models.Model):
     guide_description = models.CharField(max_length=100)
 
     def __str__(self):
-        return (f"ID: {self.guide_ID} / Name: {self.guide_name} / Lastname: {self.guide_last_name} "
-                f"/ Mob: {self.guide_mobiluri}")
+        return (f"{self.guide_name} {self.guide_last_name} "
+                f"- Mob: {self.guide_mobiluri}")
 
 class Region(models.Model):
     name = models.CharField(max_length=30)
@@ -34,7 +34,7 @@ class Tour(models.Model):
 
 
     def __str__(self):
-        return (f"Name: {self.tour_name} / Guide: {self.tour_guide} / Lenght: {self.tour_length_days} / Free spots: {self.tour_free_spots} / Visitors on tour: {self.tour_current_visitorN}")
+        return (f"{self.tour_name} -  Guide: {self.tour_guide} Lenght(days): {self.tour_length_days} / Free spots: {self.tour_free_spots} / Visitors on tour: {self.tour_current_visitorN}")
 class Visitor(models.Model):
     visitor_age = models.IntegerField
     visitor_ID = models.CharField(max_length=20)
